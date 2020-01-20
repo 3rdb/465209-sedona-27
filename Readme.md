@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Андрей Митькин](https://up.htmlacademy.ru/htmlcss/27/user/465209).
-* Наставник: `Неизвестно`.
+* Наставник: [Евгений Бервяченок](https://htmlacademy.ru/profile/jackson).
 
 ---
 
