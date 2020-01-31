@@ -112,11 +112,10 @@
         Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
-      <a href="">
-        Поиск гостиницы в Седоне
-      </a>
+      <button type="button" name="search-hotel">Поиск гостиницы в Седоне</button>
     </section>
     <section>
+      <h2 class="visually-hidden">Форма поиска гостиницы</h2>
       <form action="https://echo.htmlacademy.ru" method="get">
         <p>
           <label>
@@ -132,12 +131,16 @@
         </p>
         <p>
           <label>Взрослые:
+            <button type="button" name="quantity-button">-</button>
             <input type="number" name="quantity" value="2">
+            <button type="button" name="quantity-button">+</button>
           </label>
         </p>
         <p>
           <label>Дети:
+            <button type="button" name="quantity-button">-</button>
             <input type="number" name="quantity" value="0">
+            <button type="button" name="quantity-button">+</button>
           </label>
         </p>
         <a href="./catalog.html">Найти</a>
