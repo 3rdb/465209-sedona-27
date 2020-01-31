@@ -21,9 +21,46 @@
     </nav>
   </header>
   <main>
-    <h1>Фильтр гостиниц</h1>
+    <h1 class="visually-hidden">Фильтр гостиниц</h1>
     <section>
-      <!-- Здесь будет форма -->
+      <h2 class="visualy-hidden"></h2>
+      <form class="" action="https://echo.htmlacademy.ru" method="get">
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <label>
+            <input type="checkbox" checked>
+            бассейн
+          </label>
+          <label>
+            <input type="checkbox">
+            парковка
+          </label>
+          <label>
+            <input type="checkbox">
+            wi-fi
+          </label>
+        </fieldset>
+        <fieldset>
+          <legend>тип жилья:</legend>
+          <label>
+            <input type="checkbox" checked>
+            гостиница
+          </label>
+          <label>
+            <input type="checkbox" checked>
+            мотель
+          </label>
+          <label>
+            <input type="checkbox" checked>
+            апартаменты
+          </label>
+        </fieldset>
+        <fieldset>
+          <label for="">Стоимость в сутки(р):</label>
+
+        </fieldset>
+        <button type="button" name="button-filter-show">Показать</button>
+      </form>
     </section>
     <section>
       <p>
@@ -57,7 +94,7 @@
           </p>
           <p>
             <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
+            <button type="button-reserv" name="button">Забронировать</button>
           </p>
           <div>
             <input type="radio" name="star" value="1">
@@ -82,7 +119,7 @@
           </p>
           <p>
             <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
+            <button type="button-reserv" name="button">Забронировать</button>
           </p>
           <div>
             <input type="radio" name="star" value="1">
@@ -106,7 +143,7 @@
           </p>
           <p>
             <a href="">Подробнее</a>
-            <a href="">Забронировать</a>
+            <button type="button-reserv" name="button">Забронировать</button>
           </p>
           <div>
             <input type="radio" name="star" value="1">
