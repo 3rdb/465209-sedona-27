@@ -27,39 +27,62 @@
       <form class="" action="https://echo.htmlacademy.ru" method="get">
         <fieldset>
           <legend>Инфраструктура:</legend>
-          <label>
-            <input type="checkbox" checked>
-            бассейн
-          </label>
-          <label>
-            <input type="checkbox">
-            парковка
-          </label>
-          <label>
-            <input type="checkbox">
-            wi-fi
-          </label>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="hotel-check" checked>
+                бассейн
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="hotel-no-check">
+                парковка
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="hotel-no-check">
+                wi-fi
+              </label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset>
           <legend>тип жилья:</legend>
-          <label>
-            <input type="checkbox" checked>
-            гостиница
-          </label>
-          <label>
-            <input type="checkbox" checked>
-            мотель
-          </label>
-          <label>
-            <input type="checkbox" checked>
-            апартаменты
-          </label>
+          <ul>
+            <li>
+              <label>
+                <input type="checkbox" name="hotel-check" checked>
+                гостиница
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="hotel-check" checked>
+                мотель
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="hotel-check" checked>
+                апартаменты
+              </label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset>
           <label for="">Стоимость в сутки(р):</label>
-
+          <div>
+            <input type="text" name="range-slider-down" value="" placeholder="от 0">
+            <input type="text" name="range-slider-up" value="" placeholder="до 3000">
+          </div>
+          <div>
+            <button type="button"></button>
+            <button type="button"></button>
+          </div>
         </fieldset>
-        <button type="button" name="button-filter-show">Показать</button>
+        <button type="submit">Показать</button>
       </form>
     </section>
     <section>
@@ -94,13 +117,15 @@
           </p>
           <p>
             <a href="">Подробнее</a>
-            <button type="button-reserv" name="button">Забронировать</button>
+            <a href="">Забронировать</a>
           </p>
           <div>
-            <input type="radio" name="star" value="1">
-            <input type="radio" name="star" value="2">
-            <input type="radio" name="star" value="3">
-            <input type="radio" name="star" value="4">
+            <div class="hotel-stars">
+              <img src="img/icon_star.svg" alt="Четыре звезды" width="18" height="17">
+              <img src="img/icon_star.svg" alt="" width="18" height="17">
+              <img src="img/icon_star.svg" alt="" width="18" height="17">
+              <img src="img/icon_star.svg" alt="" width="18" height="17">
+            </div>
             <p>
               Рейтинг: 8,5
             </p>
@@ -119,12 +144,14 @@
           </p>
           <p>
             <a href="">Подробнее</a>
-            <button type="button-reserv" name="button">Забронировать</button>
+            <a href="">Забронировать</a>
           </p>
           <div>
-            <input type="radio" name="star" value="1">
-            <input type="radio" name="star" value="2">
-            <input type="radio" name="star" value="3">
+            <div class="hotel-stars">
+              <img src="img/icon_star.svg" alt="Три звезды" width="18" height="17">
+              <img src="img/icon_star.svg" alt="" width="18" height="17">
+              <img src="img/icon_star.svg" alt="" width="18" height="17">
+            </div>
             <p>
               Рейтинг: 8,9
             </p>
@@ -143,11 +170,13 @@
           </p>
           <p>
             <a href="">Подробнее</a>
-            <button type="button-reserv" name="button">Забронировать</button>
+            <a href="">Забронировать</a>
           </p>
           <div>
-            <input type="radio" name="star" value="1">
-            <input type="radio" name="star" value="2">
+            <div class="hotel-stars">
+              <img src="img/icon_star.svg" alt="Две звезды" width="18" height="17">
+              <img src="img/icon_star.svg" alt="" width="18" height="17">
+            </div>
             <p>
               Рейтинг: 9,2
             </p>
