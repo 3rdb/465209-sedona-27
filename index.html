@@ -4,15 +4,18 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normolize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-  <header>
-    <nav>
-      <a href="">
+  <header class="main-header">
+    <nav class="main-navigation">
+      <a href="" class="nav-logo">
         <img src="img/logo.svg" width="140" height="72" alt="Седона">
       </a>
-      <ul>
+      <ul class="site-navigation">
         <li><a href="">Информация</a></li>
         <li><a href="">Фото и видео</a></li>
         <li><a href="">Карта штата</a></li>
@@ -21,18 +24,20 @@
     </nav>
   </header>
   <main>
-    <img src="img/welcome.png" width="459" height="353" alt="welcome">
-    <h1 class="visually-hidden">Город седона</h1>
-    <section>
-      <p>
-        Седона — небольшой городок в Аризоне, заслуживающий большего!
-      </p>
-      <p>
-        Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
-      </p>
-    </section>
-    <section>
-      <div>
+    <div class="welcome">
+      <img class="main-logo" src="img/welcome.png" width="459" height="353" alt="welcome">
+      <h1 class="visually-hidden">Город седона</h1>
+      <section class="welcome-section">
+        <p class="welcome-item-1">
+          Седона — небольшой городок в Аризоне, заслуживающий большего!
+        </p>
+        <p class="welcome-item-2">
+          Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!
+        </p>
+      </section>
+    </div>
+    <section class="content">
+      <div class="">
         <h3>Настоящий городок</h3>
         <span>
           — №1 —
@@ -106,17 +111,17 @@
         </p>
       </li>
     </ul>
-    <section>
+    <section class="search-offers">
       <h2>Заинтересовались?</h2>
       <p>
         Укажите предполагаемые даты поездки,<br>
         и мы покажем вам лучшие предложения гостиниц в седоне
       </p>
-      <button type="button">Поиск гостиницы в Седоне</button>
+      <button type="button" class="brown">Поиск гостиницы в Седоне</button>
     </section>
     <section>
       <h2 class="visually-hidden">Форма поиска гостиницы</h2>
-      <form action="https://echo.htmlacademy.ru" method="post">
+      <form class="popup" action="https://echo.htmlacademy.ru" method="post">
         <p>
           <label>
             Дата заезда:
@@ -152,19 +157,19 @@
       <img src="img/map.png" width="1200" height="594" alt="map">
     </section>
   </main>
-  <footer>
-    <p>
+  <footer class="main-footer">
+    <p class="contacts">
       #visitSEDONA <br>
       <a href="tel:+7(495) 666-02-66">Тел: +7(495) 666-02-66</a>
     </p>
-    <div>
+    <div class="social">
       <ul>
-        <li><a href="">twitter</a></li>
-        <li><a href="">facebook</a></li>
-        <li><a href="">youtube</a></li>
+        <li><a href="" class="social-button">twitter</a></li>
+        <li><a href="" class="social-button">facebook</a></li>
+        <li><a href="" class="social-button">youtube</a></li>
       </ul>
     </div>
-    <p>
+    <p class="copyright">
       website by
       <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo_name.svg" width="115" height="41" alt="HTML Academy">
