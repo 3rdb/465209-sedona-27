@@ -14,7 +14,6 @@ a {
 }
 
 .main-navigation {
-  font-size: 14px;
   line-height: 26px;
   color: #000000;
   background-color: #ffffff
@@ -22,13 +21,19 @@ a {
 
 .site-navigation {
   list-style: none;
-  font-size: 14px;
-  font-weight: 700;
   line-height: 26px;
 }
 
 .site-navigation a {
   color: #000000;
+}
+
+.site-navigation a:hover {
+  color: #81b3d2;
+}
+
+.site-navigation a:focus {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .visually-hidden {
@@ -46,19 +51,16 @@ a {
 .welcome {
   background-image: url(../img/background_photo.jpg);
   background-repeat: no-repeat;
-  width: 1200px;
-  height: 800px;
+  background-color: #766357;
 }
 
-.welcome-item-1 {
+.welcome-title {
   font-size: 21px;
-  font-weight: 700;
   line-height: 26px;
   color: #000000;
 }
 
-.welcome-item-2 {
-  font-size: 14px;
+.welcome-text {
   font-weight: 400;
   line-height: 26px;
   color: #333333;
@@ -70,15 +72,17 @@ a {
 
 .content-item h3 {
   font-size: 21px;
-  font-weight: 700;
   color: #ffffff;
 }
 
 .content-item span,
 .content-item p {
-  font-size: 14px;
   font-weight: 400;
-  color:
+  color: #ffffff;
+}
+
+.content-item-img {
+  background-color: #766357;
 }
 
 .feature-item {
@@ -88,13 +92,11 @@ a {
 
 .feature-item h3 {
   font-size: 21px;
-  font-weight: 700;
   color: #000000;
 }
 
 .feature-item p {
   color: #333333;
-  font-size: 14px;
   font-weight: 400;
 }
 
@@ -105,38 +107,41 @@ a {
 
 .reason-item h3 {
   font-size: 21px;
-  font-weight: 700;
   color: #000000;
 }
 
 .reason-item {
   color: #333333;
-  font-size: 14px;
   font-weight: 400;
 }
 
 .search-offers h2 {
   font-size: 30px;
-  font-weight: 700;
   line-height: 36px;
   color: #000000;
 }
 
 .search-offers p {
-  font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
   color: #333333;
 }
 
-.brown {
+.brown-button {
   color: #ffffff;
   background-color: #766357;
   font-family: "PT Sans";
   font-size: 21px;
-  font-weight: 700;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+.brown-button:hover {
+  background-color: #604e43;
+}
+
+.brown-button:active {
+  background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .popup {
@@ -150,7 +155,6 @@ a {
 .contacts,
 .contacts a {
   font-size: 21px;
-  font-weight: 700;
   line-height: 26px;
   color: #000000;
 }
@@ -159,20 +163,28 @@ a {
   color: #81b3d2;
 }
 
+.social-button:hover {
+  color: #669ec0;
+}
+
+.social-button:focus {
+  color: #5496bd;
+}
+
 .copyright {
-  font-size: 14px;
   font-weight: 400;
   line-height: 26px;
   color: #000000;
 }
 
 .copyright img {
-  background-color: #231f20;
+  background-color: #ffffff;
 }
 
 .filter {
   background-image: url(../img/filter_background.png);
   background-repeat: no-repeat;
+  background-color: #81b3d2;
 }
 
 .filter ul {
@@ -181,13 +193,11 @@ a {
 
 .filter legend {
   font-size: 16px;
-  font-weight: 700;
   line-height: 21px;
   color: #ffffff;
 }
 
 .filter input[type="checkbox"] {
-  font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   color: #ffffff;
@@ -199,7 +209,6 @@ a {
 
 .search-result {
   font-size: 21px;
-  font-weight: 700;
   line-height: 26px;
   color: #000000;
 }
@@ -216,10 +225,22 @@ a {
 }
 
 .sort-list-item {
-  color: #000000;
+  color: rgba(0, 0, 0, 0.3);
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+}
+
+.sort-list-item:hover {
+  color: #81b3d2;
+}
+
+.sort-list-item:active {
+  color: #000000;
+}
+
+.active {
+  color: #81b3d2;
 }
 
 .sort-arrow-up {
@@ -246,44 +267,64 @@ a {
 
 .content-list-item h3 {
   font-size: 21px;
-  font-weight: 700;
   line-height: 26px;
   color: #000000;
 }
 
 .content-list-item p {
-  font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   color: #333333;
+}
+
+.content-list-item h3:hover {
+  color: #81b3d2;
+}
+
+.content-list-item h3:active {
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .details-button {
   background-color: #81b3d2;
   width: 110px;
   height: 27px;
-  font-size: 14px;
-  font-weight: 700;
   line-height: 21px;
   color: #ffffff;
+}
+
+.details-button:hover {
+  background-color: #669ec0;
+
+}
+
+.details-button:active {
+  background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .reserv-button {
   background-color: #766357;
   width: 110px;
   height: 27px;
-  font-size: 14px;
-  font-weight: 700;
   line-height: 21px;
   color: #ffffff;
   text-align: center;
+}
+
+.reserv-button:hover {
+background-color: #604e43;
+}
+
+.reserv-button:active {
+  background-color: #503e33;
+color: rgba(255, 255, 255, 0.3);
 }
 
 .rating {
   width: 110px;
   height: 27px;
   background-color: #f2f2f2;
-  font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   color: #666666;
