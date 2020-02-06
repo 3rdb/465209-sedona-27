@@ -13,11 +13,7 @@ a {
   text-decoration: none;
 }
 
-.main-navigation {
-  line-height: 26px;
-  color: #000000;
-  background-color: #ffffff
-}
+.main-navigation {}
 
 .site-navigation {
   list-style: none;
@@ -115,31 +111,31 @@ a {
   font-weight: 400;
 }
 
-.search-offers h2 {
+.reserve h2 {
   font-size: 30px;
   line-height: 36px;
   color: #000000;
 }
 
-.search-offers p {
+.reserve p {
   font-weight: 400;
   color: #333333;
 }
 
-.brown-button {
+.reserve-button {
   color: #ffffff;
   background-color: #766357;
-  font-family: "PT Sans";
   font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
   text-transform: uppercase;
 }
 
-.brown-button:hover {
+.reserve-button:hover {
   background-color: #604e43;
 }
 
-.brown-button:active {
+.reserve-button:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -295,7 +291,6 @@ a {
 
 .details-button:hover {
   background-color: #669ec0;
-
 }
 
 .details-button:active {
@@ -310,15 +305,16 @@ a {
   line-height: 21px;
   color: #ffffff;
   text-align: center;
+  border: none;
 }
 
 .reserv-button:hover {
-background-color: #604e43;
+  background-color: #604e43;
 }
 
 .reserv-button:active {
   background-color: #503e33;
-color: rgba(255, 255, 255, 0.3);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .rating {
