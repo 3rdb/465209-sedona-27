@@ -199,6 +199,20 @@ a {
   color: #ffffff;
 }
 
+.range-slider-down,
+.range-slider-up {
+  background: transparent;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+}
+
+.result-button {
+  background: transparent;
+  border: solid 2px #ffffff;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 .search-section {
   background-color: #fefefe;
 }
@@ -285,6 +299,7 @@ a {
   background-color: #81b3d2;
   width: 110px;
   height: 27px;
+  font-weight: 700;
   line-height: 21px;
   color: #ffffff;
 }
@@ -303,6 +318,7 @@ a {
   width: 110px;
   height: 27px;
   line-height: 21px;
+  font-weight: 700;
   color: #ffffff;
   text-align: center;
   border: none;
