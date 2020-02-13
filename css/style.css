@@ -13,9 +13,23 @@ a {
   text-decoration: none;
 }
 
-.main-navigation {}
+.main-navigation {
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+}
+
+.nav-logo {
+  display: flex;
+  order: 1;
+}
 
 .site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
+  flex-wrap: wrap;
   list-style: none;
   line-height: 26px;
 }
@@ -45,21 +59,39 @@ a {
 }
 
 .welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
   background-image: url(../img/background_photo.jpg);
   background-repeat: no-repeat;
   background-color: #766357;
 }
 
 .welcome-title {
+  text-align: center;
+  width: 440px;
+  height: 48px;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+  margin: 0;
+  padding: 0;
 }
 
 .welcome-text {
+  text-align: center;
   font-weight: 400;
   line-height: 26px;
   color: #333333;
+}
+
+.content-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 2000px;
 }
 
 .content-item {
@@ -81,6 +113,15 @@ a {
   background-color: #766357;
 }
 
+.features-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
+}
+
 .feature-item {
   list-style: none;
   background-color: #ffffff;
@@ -97,6 +138,12 @@ a {
 }
 
 .reason-list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  width: 1200px;
+  margin: 0;
+  padding: 0;
   list-style: none;
   background-color: #eeeeee;
 }
@@ -111,13 +158,31 @@ a {
   font-weight: 400;
 }
 
+.popup-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+}
+
+.reserve {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 1200px;
+}
+
 .reserve h2 {
   font-size: 30px;
+  text-align: center;
   line-height: 36px;
   color: #000000;
 }
 
 .reserve p {
+  text-align: center;
   font-weight: 400;
   color: #333333;
 }
@@ -125,6 +190,7 @@ a {
 .reserve-button {
   color: #ffffff;
   background-color: #766357;
+  width: 568px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -140,16 +206,17 @@ a {
   color: rgba(255, 255, 255, 0.3);
 }
 
-.popup {
-  display: none;
-}
+.popup {}
 
 .main-footer {
-  background-color: #f9fbf6;
+  display: flex;
+  justify-content: space-between;
+  width: 1200px;
 }
 
 .contacts,
 .contacts a {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
@@ -177,7 +244,15 @@ a {
   background-color: #ffffff;
 }
 
+.filter-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
 .filter {
+  display: flex;
+  justify-content: flex-start;
   background-image: url(../img/filter_background.png);
   background-repeat: no-repeat;
   background-color: #81b3d2;
@@ -215,6 +290,10 @@ a {
 
 .search-section {
   background-color: #fefefe;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
 }
 
 .search-result {
@@ -224,13 +303,20 @@ a {
 }
 
 .sort {
+  text-align: center;
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
+  margin-left: 10px;
   color: #000000;
 }
 
 .sort-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 240px;
   list-style: none;
 }
 
@@ -253,6 +339,13 @@ a {
   color: #81b3d2;
 }
 
+.sort-arrow-list {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  justify-content: center;
+}
+
 .sort-arrow-up {
   list-style: none;
   background-image: url(../img/icon-up-dir.svg);
@@ -271,20 +364,48 @@ a {
   height: 10px;
 }
 
+.show-search-content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
 .content-list {
+  display: flex;
+  flex-direction: column;
   list-style: none;
+}
+
+.content-list-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.item-rating {
+  margin-left: auto;
 }
 
 .content-list-item h3 {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+  margin: 0;
+  margin-left: 10px;
 }
 
 .content-list-item p {
   font-weight: 400;
   line-height: 21px;
   color: #333333;
+  margin: 0;
 }
 
 .content-list-item h3:hover {
