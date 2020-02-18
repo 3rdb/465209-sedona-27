@@ -19,6 +19,7 @@ a {
 }
 
 .main-navigation {
+  position: relative;
   display: flex;
 }
 
@@ -73,7 +74,8 @@ a {
   justify-content: center;
   align-items: center;
   background-image: url(../img/background_photo.jpg);
-  background-repeat: no-repeat;
+  background-size:
+    background-repeat: no-repeat;
   background-color: #766357;
 }
 
@@ -85,7 +87,7 @@ a {
 .welcome-title {
   text-align: center;
   width: 440px;
-  height: 48px;
+  min-height: 48px;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
@@ -108,13 +110,18 @@ a {
 
 .content-item {
   background-color: #81b3d2;
-  height: 256px;
+  min-height: 256px;
   text-align: center;
   padding-top: 46px;
   padding-left: 60px;
   padding-right: 60px;
-  padding-bottom: 64px;
   box-sizing: border-box;
+}
+
+.qwe {
+  background-color: #81b3d2;
+  min-height: 256px;
+  width: 100%;
 }
 
 .content-item h3 {
@@ -143,7 +150,7 @@ a {
 .feature-item {
   list-style: none;
   background-color: #ffffff;
-  height: 334px;
+  min-height: 334px;
   width: 400px;
   padding-top: 120px;
   box-sizing: border-box;
@@ -157,7 +164,7 @@ a {
 .feature-item p {
   color: #333333;
   font-weight: 400;
-  width: 253px;
+  width: 273px;
   text-align: center;
   margin: 0 auto;
 }
@@ -180,7 +187,7 @@ a {
 .reason-item {
   color: #333333;
   font-weight: 400;
-  height: 256px;
+  min-height: 256px;
   width: 400px;
   text-align: center;
   padding-top: 50px;
@@ -216,6 +223,7 @@ a {
   text-align: center;
   font-weight: 400;
   color: #333333;
+  margin: 0 auto;
 }
 
 .reserve-button {
@@ -242,16 +250,31 @@ a {
 
 .main-footer {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  min-height: 120px;
 }
 
-.contacts,
+.contacts {
+  margin-left: 75px;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000000;
+}
+
 .contacts a {
   margin: 0;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+}
+
+.social {
+  display: flex;
+}
+
+.social ul {
+  list-style: none;
+  margin-left: 178px;
 }
 
 .social-button {
@@ -271,6 +294,8 @@ a {
   line-height: 26px;
   color: #000000;
   text-align: center;
+  margin-left: auto;
+  margin-right: 100px;
 }
 
 .copyright img {
@@ -413,7 +438,7 @@ a {
 .content-list-item {
   display: flex;
   align-items: center;
-  height: 150px;
+  min-height: 150px;
 }
 
 .item-description {
@@ -421,7 +446,7 @@ a {
   flex-direction: column;
   justify-content: space-between;
   margin-left: 30px;
-  height: 90px;
+  min-height: 90px;
 }
 
 .hotel-stars {
@@ -457,7 +482,7 @@ a {
 .details-button {
   background-color: #81b3d2;
   width: 110px;
-  height: 27px;
+  min-height: 27px;
   font-weight: 700;
   line-height: 21px;
   color: #ffffff;
@@ -475,7 +500,7 @@ a {
 .reserved-button {
   background-color: #766357;
   width: 110px;
-  height: 27px;
+  min-height: 27px;
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
@@ -494,7 +519,7 @@ a {
 
 .rating {
   width: 110px;
-  height: 27px;
+  min-height: 27px;
   background-color: #f2f2f2;
   font-weight: 400;
   line-height: 21px;
