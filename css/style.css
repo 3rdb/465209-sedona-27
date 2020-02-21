@@ -69,12 +69,12 @@ a {
 }
 
 .welcome {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-image: url(../img/background_photo.jpg);
-  background-size:
     background-repeat: no-repeat;
   background-color: #766357;
 }
@@ -82,6 +82,21 @@ a {
 .main-logo {
   margin-top: 76px;
   margin-bottom: 140px;
+}
+
+.welcome-section{
+  z-index: 2;
+}
+
+.welcome::after{
+  position: absolute;
+  content: "";
+  width: 1200px;
+  height: 215px;
+  background-color: white;
+  top: 100%;
+  transform: translateY(-100%);
+  z-index: 1;
 }
 
 .welcome-title {
@@ -118,11 +133,6 @@ a {
   box-sizing: border-box;
 }
 
-.qwe {
-  background-color: #81b3d2;
-  min-height: 256px;
-  width: 100%;
-}
 
 .content-item h3 {
   font-size: 21px;
@@ -270,23 +280,38 @@ a {
 
 .social {
   display: flex;
+
 }
 
 .social ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   list-style: none;
   margin-left: 178px;
+  padding: 0;
 }
 
 .social-button {
-  color: #81b3d2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #81b3d2;
+  width: 46px;
+  height: 48px;
+  margin-right: 6px;
 }
 
 .social-button:hover {
-  color: #669ec0;
+  background-color: #669ec0;
 }
 
 .social-button:focus {
-  color: #5496bd;
+  background-color: #5496bd;
+}
+
+.social-button:focus path {
+  opacity: 0.3;
 }
 
 .copyright {
@@ -294,11 +319,26 @@ a {
   line-height: 26px;
   color: #000000;
   text-align: center;
-  margin-left: auto;
-  margin-right: 100px;
+  margin-right: 8px;
 }
 
-.copyright img {
+.copyright-footer{
+  display: flex;
+align-items: center;
+min-height: 120px;
+margin-left: auto;
+margin-right: 101px;
+}
+
+.copyright-footer svg:hover path{
+fill: #81b3d2;
+}
+
+.copyright-footer svg:active path{
+fill: #bdbbbc;
+}
+
+.copyright span {
   background-color: #ffffff;
   top: 50%;
   transform: translateY(50%);
