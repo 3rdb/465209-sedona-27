@@ -36,12 +36,31 @@ a {
   flex-wrap: wrap;
   list-style: none;
   line-height: 26px;
-  padding: 0;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
 .site-navigation li {
-  text-align: center;
-  width: 300px;
+  width: 242px;
+}
+
+.site-navigation li:nth-child(1){
+  text-align: left;
+}
+
+.site-navigation li:nth-child(2){
+  margin-right: auto;
+  text-align: left;
+}
+
+.site-navigation li:nth-child(3){
+  text-align: right;
+  margin-left: auto;
+}
+
+.site-navigation li:nth-child(4){
+  text-align: right;
+
 }
 
 .site-navigation a {
@@ -75,7 +94,7 @@ a {
   justify-content: center;
   align-items: center;
   background-image: url(../img/background_photo.jpg);
-    background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-color: #766357;
 }
 
@@ -84,11 +103,11 @@ a {
   margin-bottom: 140px;
 }
 
-.welcome-section{
+.welcome-section {
   z-index: 2;
 }
 
-.welcome::after{
+.welcome::after {
   position: absolute;
   content: "";
   width: 1200px;
@@ -132,7 +151,6 @@ a {
   padding-right: 60px;
   box-sizing: border-box;
 }
-
 
 .content-item h3 {
   font-size: 21px;
@@ -265,10 +283,13 @@ a {
 }
 
 .contacts {
-  margin-left: 75px;
+  margin-left: 132px;
   font-size: 21px;
   line-height: 26px;
   color: #000000;
+  width: 400px;
+  margin-top: 40px;
+  margin-bottom: 18px;
 }
 
 .contacts a {
@@ -280,7 +301,7 @@ a {
 
 .social {
   display: flex;
-
+  width: 400px;
 }
 
 .social ul {
@@ -288,7 +309,7 @@ a {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  margin-left: 178px;
+  margin-left: 45px;
   padding: 0;
 }
 
@@ -322,20 +343,21 @@ a {
   margin-right: 8px;
 }
 
-.copyright-footer{
+.copyright-footer {
   display: flex;
-align-items: center;
-min-height: 120px;
-margin-left: auto;
-margin-right: 101px;
+  align-items: center;
+  justify-content: center;
+  min-height: 120px;
+  width: 400px;
+  margin-right: 25px;
 }
 
-.copyright-footer svg:hover path{
-fill: #81b3d2;
+.copyright-footer svg:hover path {
+  fill: #81b3d2;
 }
 
-.copyright-footer svg:active path{
-fill: #bdbbbc;
+.copyright-footer svg:active path {
+  fill: #bdbbbc;
 }
 
 .copyright span {
