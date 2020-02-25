@@ -27,6 +27,7 @@ a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 3;
 }
 
 .site-navigation {
@@ -112,7 +113,8 @@ a {
   content: "";
   width: 1200px;
   height: 215px;
-  background-color: white;
+  background-color: red;
+  background-image: url(../img/slice_mount_backg.png);
   top: 100%;
   transform: translateY(-100%);
   z-index: 1;
