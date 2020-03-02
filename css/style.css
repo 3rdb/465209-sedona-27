@@ -105,6 +105,7 @@ a {
 }
 
 .welcome-section {
+  position: relative;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -112,13 +113,20 @@ a {
   width: 100%;
 }
 
+.welcome-content {
+  width: 100%;
+  background-color: #ffffff;
+}
+
 .welcome-section::before {
   position: absolute;
   content: "";
+  top: -58px;
+  background-position-x: -1px;
+  height: 59px;
   width: 1200px;
-  height: 215px;
-  background-color: red;
   background-image: url(../img/slice_mount_backg.png);
+  background-repeat: no-repeat;
 }
 
 .welcome-title {
@@ -128,7 +136,7 @@ a {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   margin-bottom: 38px;
 }
@@ -233,6 +241,19 @@ a {
 .reason-item h3 {
   font-size: 21px;
   color: #000000;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.popup-form input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]:hover,
+input[type="number"]:focus {
+  -moz-appearance: number-input;
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
 }
 
 .reason-item {
@@ -260,6 +281,7 @@ a {
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
 }
 
 .popup {
@@ -272,7 +294,8 @@ a {
   width: 346px;
   height: 38px;
   padding-left: 13px;
-  margin-left: 10px;
+  padding-right: 40px;
+  margin-left: 6px;
   font: inherit;
   color: #000000;
   text-transform: uppercase;
@@ -281,10 +304,52 @@ a {
   background-color: #f2f2f2;
 }
 
-.calendar-icon {
-  background-image: url(../img/calendar.svg);
-  background-position: 300px;
-  background-repeat: no-repeat;
+.popup input.checkin {
+  margin-left: 10px;
+}
+
+.calendar-button-in {
+  top: 75px;
+  left: 471px;
+  position: absolute;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.calendar-button-in svg:hover path {
+  fill: #000000;
+}
+
+.calendar-button-in svg:active path {
+  fill: #81b3d2;
+}
+
+.calendar-button-in svg path {
+  fill: #cacaca;
+}
+
+.calendar-button-off {
+  top: 130px;
+  left: 471px;
+  position: absolute;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+
+.calendar-button-off svg:hover path {
+  fill: #000000;
+}
+
+.calendar-button-off svg:active path {
+  fill: #81b3d2;
+}
+
+.calendar-button-off svg path {
+  fill: #cacaca;
 }
 
 .quantity-container {
@@ -292,30 +357,44 @@ a {
   align-items: center;
 }
 
-.quantity-adults {}
+.quantity-container label {
+  display: flex;
+  align-items: center;
+}
 
 .quantity-adults button:first-child {
   margin-left: 30px;
 }
 
 .quantity-kids {
-  margin-left: auto;
+  margin-left: 57px;
 }
+
+.quantity-adults {}
 
 .quantity-kids button:first-child {
-  margin-left: 30px;
+  margin-left: 23px;
 }
 
-.quantity-container button[type="button"] {
+.quantity-container button {
   width: 38px;
   height: 38px;
   border: 0;
   padding: 0;
   background-color: #f2f2f2;
   font: inherit;
-  color: #000000;
+  color: #cacaca;
   text-transform: uppercase;
   box-sizing: border-box;
+  cursor: pointer;
+}
+
+.quantity-container button:hover {
+  color: #000000;
+}
+
+.quantity-container button:active {
+  color: #81b3d2;
 }
 
 .quantity-container input[type="number"] {
@@ -340,6 +419,7 @@ a {
   color: #ffffff;
   margin-top: 54px;
   border: 0;
+  cursor: pointer;
 }
 
 .search-button:hover {
@@ -385,6 +465,7 @@ a {
   text-transform: uppercase;
   margin-top: 52px;
   border: 0;
+  cursor: pointer;
 }
 
 .reserve-button:hover {
@@ -394,6 +475,18 @@ a {
 .reserve-button:active {
   background-color: #503e33;
   color: rgba(255, 255, 255, 0.3);
+}
+
+.map {
+  position: relative;
+  display: flex;
+}
+
+.map iframe {
+  position: absolute;
+  width: 1200px;
+  height: 474px;
+  z-index: 1;
 }
 
 .main-footer {
@@ -477,6 +570,10 @@ a {
   justify-content: center;
   min-height: 120px;
   width: 400px;
+}
+
+.copyright-footer a {
+  display: flex;
 }
 
 .copyright-footer svg:hover path {
@@ -570,13 +667,14 @@ a {
   background-color: #fefefe;
   display: flex;
   align-items: center;
+  padding-left: 72px;
+  padding-right: 72px;
 }
 
 .search-result {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
-  padding-left: 72px;
 }
 
 .sort {
@@ -618,6 +716,10 @@ a {
   border: 0;
 }
 
+.active svg path {
+  fill: #81b3d2;
+}
+
 .sort-arrow-list {
   display: flex;
   margin-left: auto;
@@ -627,18 +729,37 @@ a {
 
 .sort-arrow-up {
   list-style: none;
-  background-image: url(../img/icon-up-dir.svg);
-  background-repeat: no-repeat;
-  background-color: #cacaca;
   width: 11px;
   height: 10px;
 }
 
+.sort-arrow-up svg path {
+  fill: #cacaca;
+}
+
+.sort-arrow-up svg:hover path {
+  fill: #000000;
+}
+
+.sort-arrow-up svg:active path {
+  fill: #81b3d2;
+}
+}
+
+.sort-arrow-down svg path {
+  fill: #81b3d2;
+}
+
+.sort-arrow-down svg:hover path {
+  fill: #000000;
+}
+
+.sort-arrow-down svg:active path {
+  fill: #81b3d2;
+}
+
 .sort-arrow-down {
   list-style: none;
-  background-image: url(../img/icon-down-dir.svg);
-  background-repeat: no-repeat;
-  background-color: #81b3d2;
   width: 11px;
   height: 10px;
 }
@@ -668,6 +789,17 @@ a {
   background-color: #ffffff;
   border-top: 1px solid #f2f2f2;
   padding-left: 72px;
+  padding-right: 72px;
+}
+
+.content-list-item a {
+  display: flex;
+}
+
+.list-item-buttons {
+  display: flex;
+  padding-top: 7px;
+}
 }
 
 .content-list-item:last-child {
@@ -678,12 +810,22 @@ a {
 .item-description {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin-left: 30px;
   min-height: 90px;
 }
 
+.item-info{
+  display: flex;
+  width: 175px;
+}
+
+.item-info .price{
+  margin-left: auto;
+}
+
 .hotel-stars {
+  display: flex;
+  justify-content: flex-end;
   margin-bottom: 47px;
 }
 
@@ -696,6 +838,7 @@ a {
   line-height: 26px;
   color: #000000;
   margin: 0;
+  padding-bottom: 10px;
 }
 
 .content-list-item p {
@@ -722,7 +865,7 @@ a {
   line-height: 21px;
   color: #ffffff;
   box-sizing: border-box;
-  padding: 2px 18px;
+  padding: 5px 18px;
 }
 
 .details-button:hover {
@@ -736,7 +879,7 @@ a {
 
 .reserved-button {
   background-color: #766357;
-  width: 110px;
+  width: 148px;
   min-height: 27px;
   line-height: 21px;
   font-weight: 700;
@@ -744,7 +887,8 @@ a {
   text-align: center;
   border: none;
   box-sizing: border-box;
-  padding: 2px 18px;
+  padding: 5px 18px;
+  margin-left: 6px;
 }
 
 .reserved-button:hover {
