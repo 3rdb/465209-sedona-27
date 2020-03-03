@@ -494,6 +494,7 @@ input[type="number"]:focus {
   align-items: center;
   min-height: 120px;
   background-color: #fefefe;
+  margin-top: 1px;
 }
 
 .contacts {
@@ -605,8 +606,9 @@ input[type="number"]:focus {
 }
 
 .filter fieldset {
-  width: 400px;
+  width: 300px;
   border: 0;
+  margin: 0;
 }
 
 .filter label {
@@ -621,15 +623,64 @@ input[type="number"]:focus {
   margin: 0;
 }
 
-.filter li {
-  margin-bottom: 35px;
+.filter-input-checkbox + label::before {
+  content: "";
+position: absolute;
+top: -2px;
+left: -38px;
+width: 23px;
+height: 23px;
+background-image: url(../img/checkbox-off.svg)
 }
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+position: absolute;
+top: -2px;
+left: -38px;
+width: 27px;
+height: 23px;
+background-image: url(../img/checkbox-on.svg);
+background-repeat: no-repeat;
+background-position: 0 0;
+}
+
+
+.infrastructure{
+  box-sizing: border-box;
+    padding-left: 72px;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+
+.type-of-housing{
+  box-sizing: border-box;
+  padding-left: 30px;
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+}
+
+.filter-option {
+  margin-bottom: 23px;
+}
+
+.filter-option label {
+  position: relative;
+  display: block;
+  cursor: pointer;
+  user-select: none;
+  width: 40%;
+}
+
 
 .filter legend {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
   padding-top: 32px;
+  padding-bottom: 15px;
 }
 
 .filter input[type="checkbox"] {
@@ -802,7 +853,7 @@ input[type="number"]:focus {
 }
 }
 
-.content-list-item:last-child {
+.content-list-item ul:last-child {
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
 }
@@ -916,6 +967,7 @@ input[type="number"]:focus {
   padding-top: 32px;
   color: #ffffff;
   text-transform: uppercase;
+  margin-left: 200px;
 }
 
 .filter-range-title {
