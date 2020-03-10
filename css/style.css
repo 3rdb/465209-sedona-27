@@ -100,8 +100,8 @@ a {
 }
 
 .main-logo {
-  margin-top: 76px;
-  margin-bottom: 140px;
+  margin-top: 77px;
+  margin-bottom: 81px;
 }
 
 .welcome-section {
@@ -138,7 +138,8 @@ a {
   color: #000000;
   margin: 0 auto;
   padding: 0;
-  margin-bottom: 38px;
+  margin-bottom: 25px;
+  margin-top: 61px;
 }
 
 .welcome-text {
@@ -146,7 +147,7 @@ a {
   font-weight: 400;
   line-height: 26px;
   color: #333333;
-  margin-bottom: 56px;
+  margin-bottom: 46px;
 }
 
 .content-row {
@@ -163,9 +164,16 @@ a {
   box-sizing: border-box;
 }
 
+.second-content-item{
+  padding-top: 45px;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
 .content-item h3 {
   font-size: 21px;
   color: #ffffff;
+  margin-top: 0px;
 }
 
 .content-item span,
@@ -192,32 +200,33 @@ a {
   background-color: #ffffff;
   min-height: 334px;
   width: 400px;
-  padding-top: 120px;
+  padding-top: 135px;
   box-sizing: border-box;
 }
 
 .feature-item.home {
   background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
-  background-position: 160px 45px;
+  background-position: 163px 60px;
 }
 
 .feature-item.eat {
   background-image: url(../img/icon-3.svg);
   background-repeat: no-repeat;
-  background-position: 160px 45px;
+  background-position: 160px 60px;
 }
 
 .feature-item.souvenir {
   background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;
-  background-position: 170px 40px;
+  background-position: 170px 58px;
 }
 
 .feature-item h3 {
   position: relative;
   font-size: 21px;
   color: #000000;
+  margin-bottom: 24px;
 }
 
 .feature-item p {
@@ -226,6 +235,7 @@ a {
   width: 273px;
   text-align: center;
   margin: 0 auto;
+  padding: 0;
 }
 
 .reason-list {
@@ -244,6 +254,8 @@ a {
   width: 60%;
   margin-left: auto;
   margin-right: auto;
+    margin-top: 0px;
+    margin-bottom: 27px;
 }
 
 .popup-form input[type="number"]::-webkit-outer-spin-button,
@@ -262,11 +274,16 @@ input[type="number"]:focus {
   min-height: 256px;
   width: 400px;
   text-align: center;
-  padding-top: 50px;
-  padding-right: 69px;
-  padding-bottom: 64px;
-  padding-left: 69px;
+  padding-bottom: 58px;
+padding-top: 47px;
+padding-right: 70px;
+padding-left: 68px;
   box-sizing: border-box;
+}
+
+.reason-item p{
+  margin-top: 18px;
+margin-bottom: 0px;
 }
 
 .popup-form {
@@ -277,7 +294,7 @@ input[type="number"]:focus {
   align-items: center;
   background-color: #ffffff;
   width: 568px;
-  height: 395px;
+  height: 390px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   left: 50%;
   transform: translateX(-50%);
@@ -289,12 +306,19 @@ input[type="number"]:focus {
   height: 285px;
 }
 
+.date-container p{
+  margin-top: 0px;
+  margin-bottom: 27px;
+}
+
 .popup input[type="text"] {
   position: relative;
-  width: 346px;
+  width: 349px;
   height: 38px;
   padding-left: 13px;
   padding-right: 40px;
+  padding-top: 0px;
+  padding-bottom: 0px;
   margin-left: 6px;
   font: inherit;
   color: #000000;
@@ -305,12 +329,16 @@ input[type="number"]:focus {
 }
 
 .popup input.checkin {
-  margin-left: 10px;
+  margin-left: 17px;
+}
+
+.popup input.checkoff {
+  margin-left: 13px;
 }
 
 .calendar-button-in {
-  top: 75px;
-  left: 471px;
+  top: 63px;
+    left: 484px;
   position: absolute;
   border: 0;
   padding: 0;
@@ -331,8 +359,8 @@ input[type="number"]:focus {
 }
 
 .calendar-button-off {
-  top: 130px;
-  left: 471px;
+  top: 129px;
+  left: 484px;
   position: absolute;
   border: 0;
   padding: 0;
@@ -357,17 +385,28 @@ input[type="number"]:focus {
   align-items: center;
 }
 
-.quantity-container label {
+.quantity-container p{
   display: flex;
   align-items: center;
+  margin: 0;
+}
+
+.quantity-adults-buttons{
+    display: flex;
+  margin-left: 38px;
+}
+
+.quantity-kids-buttons{
+  display: flex;
+  margin-left: 27px;
 }
 
 .quantity-adults button:first-child {
   margin-left: 30px;
 }
 
-.quantity-kids {
-  margin-left: 57px;
+.quantity-container .quantity-kids {
+  margin-left: 53px;
 }
 
 .quantity-adults {}
@@ -418,6 +457,7 @@ input[type="number"]:focus {
   text-transform: uppercase;
   color: #ffffff;
   margin-top: 54px;
+  padding: 0;
   border: 0;
   cursor: pointer;
 }
@@ -436,7 +476,7 @@ input[type="number"]:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 57px;
+  padding-top: 50px;
   background-color: #ffffff;
 }
 
@@ -445,6 +485,7 @@ input[type="number"]:focus {
   text-align: center;
   line-height: 36px;
   color: #000000;
+  margin-top: 0px;
 }
 
 .reserve p {
@@ -463,7 +504,8 @@ input[type="number"]:focus {
   line-height: 26px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-top: 52px;
+  margin-top: 46px;
+  padding: 0;
   border: 0;
   cursor: pointer;
 }
