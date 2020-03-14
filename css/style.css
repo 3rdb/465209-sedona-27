@@ -14,6 +14,7 @@ a {
 }
 
 .container {
+  position: relative;
   margin: 0 auto;
   width: 1200px;
   box-shadow: 0px 0px 25px 5px rgba(219, 219, 219, 1);
@@ -255,13 +256,23 @@ a {
   margin-left: auto;
   margin-right: auto;
   margin-top: 0px;
-  margin-bottom: 27px;
+  margin-bottom: 20px;
 }
 
 .popup-form input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]:hover,
-input[type="number"]:focus {
+.popup-form input[type="number"]::-webkit-inner-spin-button,
+.popup-form input[type="number"]:hover,
+.popup-form input[type="number"]:focus {
+  -moz-appearance: number-input;
+  -webkit-appearance: none;
+  margin: 0;
+  -moz-appearance: textfield;
+}
+
+.filter-range input[type="number"]::-webkit-outer-spin-button,
+.filter-range input[type="number"]::-webkit-inner-spin-button,
+.filter-range input[type="number"]:hover,
+.filter-range input[type="number"]:focus {
   -moz-appearance: number-input;
   -webkit-appearance: none;
   margin: 0;
@@ -299,11 +310,61 @@ input[type="number"]:focus {
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
+  animation: open 0.6s;
+
+
 }
 
 .popup {
   width: 458px;
   height: 285px;
+}
+
+.popup-form-close{
+display: none;
+}
+
+.popup-form-shake{
+animation: shake 0.6s;
+}
+
+
+@keyframes open {
+  0% {
+      transition: transform ease;
+      transform: translate(-50%, -100%);
+      opacity: 0;
+    }
+
+    30% {
+      opacity: 0;
+    }
+
+    100% {
+      transform: translate(-50%, 0);
+    }
+  }
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(-50%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-52%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-48%);
+  }
 }
 
 .date-container p {
@@ -336,8 +397,28 @@ input[type="number"]:focus {
   margin-left: 13px;
 }
 
+input.checkin:hover {
+  background-color: #ebebeb;
+}
+
+input.checkin:focus {
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  outline-color: #e5e5e5;
+}
+
+input.checkoff:hover {
+  background-color: #ebebeb;
+}
+
+input.checkoff:focus {
+  border: 2px solid #e5e5e5;
+  background-color: #ffffff;
+  outline-color: #e5e5e5;
+}
+
 .calendar-button-in {
-  top: 63px;
+  top: 60px;
   left: 484px;
   position: absolute;
   border: 0;
@@ -346,20 +427,20 @@ input[type="number"]:focus {
   cursor: pointer;
 }
 
-.calendar-button-in svg:hover path {
+.calendar-svg-in:hover path {
   fill: #000000;
 }
 
-.calendar-button-in svg:active path {
+.calendar-svg-in:active path {
   fill: #81b3d2;
 }
 
-.calendar-button-in svg path {
+.calendar-svg-in path {
   fill: #cacaca;
 }
 
 .calendar-button-off {
-  top: 129px;
+  top: 125px;
   left: 484px;
   position: absolute;
   border: 0;
@@ -368,15 +449,15 @@ input[type="number"]:focus {
   cursor: pointer;
 }
 
-.calendar-button-off svg:hover path {
+.calendar-svg-off:hover path {
   fill: #000000;
 }
 
-.calendar-button-off svg:active path {
+.calendar-svg-off:active path {
   fill: #81b3d2;
 }
 
-.calendar-button-off svg path {
+.calendar-svg-off path {
   fill: #cacaca;
 }
 
@@ -409,8 +490,6 @@ input[type="number"]:focus {
   margin-left: 53px;
 }
 
-.quantity-adults {}
-
 .quantity-kids button:first-child {
   margin-left: 23px;
 }
@@ -421,7 +500,8 @@ input[type="number"]:focus {
   border: 0;
   padding: 0;
   background-color: #f2f2f2;
-  font: inherit;
+  font-size: 20px;
+  font-weight: 700;
   color: #cacaca;
   text-transform: uppercase;
   box-sizing: border-box;
@@ -508,6 +588,7 @@ input[type="number"]:focus {
   padding: 0;
   border: 0;
   cursor: pointer;
+  z-index: 3;
 }
 
 .reserve-button:hover {
@@ -553,7 +634,7 @@ input[type="number"]:focus {
   width: 400px;
   padding-left: 123px;
   margin-top: 13px;
-margin-bottom: 16px;
+  margin-bottom: 16px;
   justify-content: center;
   box-sizing: border-box;
 }
@@ -695,6 +776,11 @@ margin-bottom: 16px;
   background-image: url(../img/checkbox-on.svg);
 }
 
+.filter-input-checkbox:disabled+label::before {
+  content: "";
+  opacity: 0.5;
+}
+
 .infrastructure {
   box-sizing: border-box;
   padding-left: 72px;
@@ -776,7 +862,7 @@ margin-bottom: 16px;
   line-height: 26px;
   color: #000000;
   margin-top: 28px;
-margin-bottom: 28px;
+  margin-bottom: 28px;
 }
 
 .sort {
@@ -830,7 +916,7 @@ margin-bottom: 28px;
   justify-content: center;
 }
 
-.sort-arrow-list li:first-child{
+.sort-arrow-list li:first-child {
   margin-right: 12px;
 }
 
@@ -905,7 +991,7 @@ margin-bottom: 28px;
 
 .list-item-buttons {
   display: flex;
-  padding-top: 7px;
+  padding-top: 5px;
 }
 
 .content-list li:last-child {
@@ -923,6 +1009,8 @@ margin-bottom: 28px;
 .item-info {
   display: flex;
   width: 175px;
+  padding-top: 6px;
+  padding-bottom: 5px;
 }
 
 .item-info .price {
@@ -952,7 +1040,6 @@ margin-bottom: 28px;
   line-height: 26px;
   color: #000000;
   margin: 0;
-  padding-bottom: 10px;
 }
 
 .content-list-item p {
@@ -1015,14 +1102,12 @@ margin-bottom: 28px;
 }
 
 .rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 110px;
   min-height: 27px;
   background-color: #f2f2f2;
-  font-weight: 400;
-  line-height: 21px;
-  color: #666666;
-  padding-top: 5px;
-  text-align: center;
 }
 
 .filter-range {
@@ -1114,6 +1199,8 @@ margin-bottom: 28px;
 
 .range-toggle:hover {
   background: #1c4f80;
+  width: 5px;
+  height: 5px;
 }
 
 .range-toggle-min {
