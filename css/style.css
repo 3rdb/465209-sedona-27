@@ -310,9 +310,7 @@ a {
   left: 50%;
   transform: translateX(-50%);
   z-index: 2;
-  animation: open 0.6s;
-
-
+  animation: open 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .popup {
@@ -320,32 +318,30 @@ a {
   height: 285px;
 }
 
-.popup-form-close{
-display: none;
+.popup-form-close {
+  animation: close 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
-.popup-form-shake{
-animation: shake 0.6s;
+.popup-form-shake {
+  animation: shake 0.6s;
 }
-
 
 @keyframes open {
   0% {
-      transition: transform ease;
-      transform: translate(-50%, -100%);
-      opacity: 0;
-    }
-
-    30% {
-      opacity: 0;
-    }
-
-    100% {
-      transform: translate(-50%, 0);
-    }
+    transform: translate(-50%, -100%);
   }
 
+  10% {
+    opacity: 0;
+  }
+
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+
 @keyframes shake {
+
   0%,
   100% {
     transform: translateX(-50%);
@@ -364,6 +360,25 @@ animation: shake 0.6s;
   60%,
   80% {
     transform: translateX(-48%);
+  }
+}
+
+@keyframes close {
+  0% {
+    transform: translate(-50%, 0);
+
+    10% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+  }
+
+  100% {
+    transform: translate(-50%, -100%);
+    opacity: 0;
   }
 }
 
@@ -936,7 +951,6 @@ input.checkoff:focus {
 
 .sort-arrow-up svg:active path {
   fill: #81b3d2;
-}
 }
 
 .sort-arrow-down svg path {
