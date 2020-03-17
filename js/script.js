@@ -17,7 +17,6 @@ link.addEventListener("click", function(evt) {
 form.addEventListener("submit", function(evt) {
   if (!datein.value || !dateoff.value) {
     evt.preventDefault();
-    console.log("Нужно ввести даты въезда и выезда");
     popup.classList.remove("popup-form-shake");
     popup.offsetWidth = popup.offsetWidth;
     popup.classList.add("popup-form-shake");
