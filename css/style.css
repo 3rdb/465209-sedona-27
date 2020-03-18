@@ -89,14 +89,13 @@ a {
 }
 
 .visually-hidden {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px);
-  /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
@@ -118,7 +117,7 @@ a {
   background-image: url(../img/background_photo.jpg);
   background-repeat: no-repeat;
   background-position-y: -80px;
-  background-color: #766357;
+  background-color: #81b3d2;
 }
 
 .main-logo {
@@ -531,7 +530,7 @@ input.checkin:hover {
 input.checkin:focus {
   border: 2px solid #e5e5e5;
   background-color: #ffffff;
-  outline-color: #e5e5e5;
+
 }
 
 input.checkoff:hover {
@@ -548,6 +547,7 @@ input.checkoff:focus {
   top: 60px;
   left: 484px;
   position: absolute;
+  height: 0;
   border: 0;
   padding: 0;
   margin: 0;
@@ -570,6 +570,7 @@ input.checkoff:focus {
   top: 125px;
   left: 484px;
   position: absolute;
+  height: 0;
   border: 0;
   padding: 0;
   margin: 0;
@@ -598,13 +599,35 @@ input.checkoff:focus {
   align-items: center;
 }
 
-.quantity-container p {
+/*.quantity-container p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0;
+}
+*/
+.quantity-kids{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+
+.quantity-adults{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  justify-content: center;
   margin: 0;
 }
 
@@ -623,18 +646,12 @@ input.checkoff:focus {
   margin-left: 27px;
 }
 
-.quantity-adults button:first-child {
-  margin-left: 30px;
-}
 
 .quantity-container .quantity-kids {
   margin-left:
     53px;
 }
 
-.quantity-kids button:first-child {
-  margin-left: 23px;
-}
 
 .quantity-container button {
   width: 38px;
@@ -1220,7 +1237,7 @@ input.checkoff:focus {
   -ms-flex-align: center;
   align-items: center;
   min-height: 150px;
-  background-color: #ffffff;
+  background-color: #fefefe;
   border-top: 1px solid #e5e5e5;
   padding-left: 72px;
   padding-right: 72px;
