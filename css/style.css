@@ -962,6 +962,10 @@ input.checkoff:focus {
   color: #ffffff;
 }
 
+.filter input[type="checkbox"]:focus+label::before {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
 .range-slider-down, .range-slider-up {
   background: transparent;
   border: solid 2px #ffffff;
