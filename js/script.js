@@ -5,7 +5,7 @@ var form = popup.querySelector("form");
 var datein = popup.querySelector("[name=date-check-in]");
 var dateoff = popup.querySelector("[name=date-check-off]");
 
-
+popup.classList.add("popup-form-close");
 
 
 link.addEventListener("click", function(evt) {

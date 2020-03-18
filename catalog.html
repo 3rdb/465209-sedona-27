@@ -5,8 +5,8 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link rel="stylesheet" href="css/normalize-min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
@@ -14,13 +14,13 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a href="./index.html" class="nav-logo">
-          <img src="img/logo.svg" width="140" height="72" alt="Седона">
+          <img src="img/logo.svg" width="140" height="72" alt="Логотип Седона">
         </a>
         <ul class="site-navigation">
           <li><a href="">Информация</a></li>
           <li><a href="">Фото и видео</a></li>
           <li><a href="">Карта штата</a></li>
-          <li><a href="">Гостиницы</a></li>
+          <li><a href="" class="current-page">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -89,8 +89,8 @@
               <div class="scale">
                 <div class="bar"></div>
               </div>
-              <div class="range-toggle range-toggle-min"></div>
-              <div class="range-toggle range-toggle-max"></div>
+              <button class="range-toggle range-toggle-min"></button>
+              <button class="range-toggle range-toggle-max"></button>
             </div>
             <button class="btn-transparent" type="submit">Показать</button>
           </div>
@@ -110,14 +110,14 @@
         </ul>
         <ul class="sort-arrow-list">
           <li class="sort-arrow-up">
-            <a href="">
+            <a href="" aria-label="Сортировка по возростанию">
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path fill="#231F20" d="M5.5 0L0 10h11z" />
               </svg>
             </a>
           </li>
           <li class="sort-arrow-down">
-            <a href="">
+            <a href="" aria-label="Сортировка по убыванию">
               <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
                 <path fill="#81b3d2" d="M5.5 10L0 0h11" />
               </svg>
@@ -129,7 +129,7 @@
         <ul class="content-list">
           <li class="content-list-item">
             <a href="" class="">
-              <img src="img/amara_resort.jpg" width="135" height="90" alt="Amara Resort & Spa">
+              <img src="img/amara_resort.jpg" width="135" height="90" alt="Гостиница СПА недалеко от горы">
             </a>
             <div class="item-description">
               <a href="">
@@ -158,7 +158,7 @@
           </li>
           <li class="content-list-item">
             <a href="">
-              <img src="img/desert_quail.jpg" width="135" height="90" alt="Desert Quail Inn">
+              <img src="img/desert_quail.jpg" width="135" height="90" alt="Мотель у дороги">
             </a>
             <div class="item-description">
               <a href="">
@@ -186,7 +186,7 @@
           </li>
           <li class="content-list-item">
             <a href="">
-              <img src="img/villas.jpg" width="135" height="90" alt="Villas at Poco Diablo">
+              <img src="img/villas.jpg" width="135" height="90" alt="Аппартаменты в окрнуженные деревьями">
             </a>
             <div class="item-description">
               <a href="">
@@ -216,8 +216,7 @@
     </main>
     <footer class="main-footer">
       <p class="contacts">
-        #visitSEDONA
-        <br>
+        <span class="hashtag">#visitSEDONA</span>
         <a href="tel:+74956660266">Тел: +7(495) 666-02-66</a>
       </p>
       <div class="social">
