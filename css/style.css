@@ -316,7 +316,7 @@ a {
   align-items: center;
   background-color: #ffffff;
   width: 568px;
-  height: 390px;
+  min-height: 390px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -328,7 +328,7 @@ a {
 
 .popup {
   width: 461px;
-  height: 285px;
+  min-height: 285px;
 }
 
 .popup-form-close {
@@ -461,6 +461,12 @@ a {
   position: relative;
   margin-top: 0px;
   margin-bottom: 27px;
+}
+
+.date-container label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .popup input[type="text"] {
