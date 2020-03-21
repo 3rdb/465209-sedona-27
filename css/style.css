@@ -45,6 +45,7 @@ a {
   line-height: 26px;
   padding-left: 72px;
   padding-right: 72px;
+  margin-bottom: 16px;
 }
 
 .site-navigation li {
@@ -109,7 +110,7 @@ a {
 
 .main-logo {
   margin-top: 77px;
-  margin-bottom: 81px;
+  margin-bottom: 78px;
 }
 
 .welcome-section {
@@ -158,7 +159,7 @@ a {
   font-weight: 400;
   line-height: 26px;
   color: #333333;
-  margin-bottom: 44px;
+  margin-bottom: 53px;
 }
 
 .content-row {
@@ -208,7 +209,7 @@ a {
 .feature-item {
   list-style: none;
   background-color: #ffffff;
-  min-height: 334px;
+  min-height: 330px;
   width: 400px;
   padding-top: 135px;
   box-sizing: border-box;
@@ -243,7 +244,7 @@ a {
   color: #333333;
   font-weight:
     400;
-  width: 273px;
+  width: 285px;
   text-align: center;
   margin: 0 auto;
   padding: 0;
@@ -295,11 +296,16 @@ a {
   min-height: 256px;
   width: 400px;
   text-align: center;
-  padding-bottom: 58px;
-  padding-top: 47px;
-  padding-right: 70px;
+  padding-bottom: 53px;
+  padding-top: 43px;
+  padding-right: 66px;
   padding-left: 68px;
   box-sizing: border-box;
+}
+
+.reason-item:nth-child(3n+3) {
+  padding-right: 75px;
+  padding-left: 78px;
 }
 
 .reason-item p {
@@ -316,7 +322,7 @@ a {
   align-items: center;
   background-color: #ffffff;
   width: 568px;
-  min-height: 390px;
+  min-height: 395px;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -460,7 +466,8 @@ a {
 .date-container p {
   position: relative;
   margin-top: 0px;
-  margin-bottom: 27px;
+  margin-bottom: 30px;
+  box-sizing: border-box;
 }
 
 .date-container label {
@@ -471,7 +478,7 @@ a {
 
 .popup input[type="text"] {
   position: relative;
-  width: 349px;
+  width: 344px;
   height: 38px;
   padding-left: 13px;
   padding-right: 40px;
@@ -487,11 +494,11 @@ a {
 }
 
 .popup input.checkin {
-  margin-left: 17px;
+  margin-left: 20px;
 }
 
 .popup input.checkoff {
-  margin-left: 13px;
+  margin-left: 16px;
 }
 
 input.checkin:hover {
@@ -565,7 +572,7 @@ input.checkoff:focus {
 .quantity-container {
   display: flex;
   align-items: center;
-  margin-bottom: 58px;
+  margin-bottom: 52px;
 }
 
 /*.quantity-container p {
@@ -594,7 +601,7 @@ input.checkoff:focus {
 
 .quantity-adults-buttons {
   display: flex;
-  margin-left: 38px;
+  margin-left: 42px;
 }
 
 .quantity-kids-buttons {
@@ -864,7 +871,7 @@ input.checkoff:focus {
   background-image: url(../img/filter_background.png);
   background-repeat: no-repeat;
   background-position-x: 0px;
-  background-position-y: -350px;
+  background-position-y: -290px;
   background-color: #81b3d2;
 }
 
@@ -930,7 +937,7 @@ input.checkoff:focus {
 .type-of-housing {
   box-sizing:
     border-box;
-  padding-left: 30px;
+  padding-left: 27px;
   padding-top: 0;
   padding-right: 0;
   padding-bottom: 0;
@@ -956,7 +963,7 @@ input.checkoff:focus {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
-  padding-top: 26px;
+  padding-top: 27px;
   padding-bottom: 15px;
 }
 
@@ -1008,8 +1015,8 @@ input.checkoff:focus {
   font-size: 21px;
   line-height: 26px;
   color: #000000;
-  margin-top: 28px;
   margin-bottom: 28px;
+  margin-top: 31px;
 }
 
 .sort {
@@ -1018,7 +1025,8 @@ input.checkoff:focus {
   font-size: 12px;
   font-weight: 400;
   line-height: 18px;
-  margin-left: 43px;
+  margin-top: 14px;
+  margin-left: 47px;
   color: #000000;
 }
 
@@ -1235,7 +1243,7 @@ input.checkoff:focus {
 
 .reserved-button {
   background-color: #766357;
-  width: 148px;
+  width: 142px;
   min-height: 27px;
   line-height: 21px;
   font-weight: 700;
@@ -1266,16 +1274,15 @@ input.checkoff:focus {
 }
 
 .filter-range {
-  width: 330px;
-  padding-top: 32px;
+  width: 314px;
+  padding-top: 27px;
   color: #ffffff;
   text-transform: uppercase;
-  margin-left: 228px;
-  margin-right: 73px;
+  margin-left: 212px;
 }
 
 .filter-range-title {
-  margin-bottom: 5px;
+  margin-bottom: 9px;
   font-weight: 600;
   font-size: 16px;
   line-height: 21px;
@@ -1314,7 +1321,7 @@ input.checkoff:focus {
 
 .price-controls .min-price, .price-controls .max-price {
   width: 90px;
-  padding-left: 65px;
+  padding-left: 62px;
 }
 
 .price-controls input {
@@ -1328,7 +1335,7 @@ input.checkoff:focus {
 
 .range-controls {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 30px;
 }
 
 .range-controls .scale {
@@ -1374,7 +1381,8 @@ input.checkoff:focus {
   display: block;
   margin: 0 auto;
   padding: 6px 35px;
-  margin-bottom: 32px;
+  margin-bottom: 35px;
+  margin-right: 95px;
   font-size: 14px;
   line-height: 20px;
   color: #ffffff;
