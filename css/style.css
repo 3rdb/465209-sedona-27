@@ -126,6 +126,7 @@ a {
 .welcome-content {
   width: 100%;
   background-color: #ffffff;
+  letter-spacing: 0.1px;
 }
 
 .welcome-section::before {
@@ -311,6 +312,7 @@ a {
 .reason-item p {
   margin-top: 18px;
   margin-bottom: 0px;
+  line-height: 1.5;
 }
 
 .popup-form {
@@ -763,7 +765,7 @@ input.checkoff:focus {
   line-height: 26px;
   color: #000000;
   width: 400px;
-  padding-left: 123px;
+  padding-left: 126px;
   margin-top: 13px;
   margin-bottom: 16px;
   justify-content: center;
@@ -928,7 +930,7 @@ input.checkoff:focus {
 
 .infrastructure {
   box-sizing: border-box;
-  padding-left: 72px;
+  padding-left: 71px;
   padding-top: 0;
   padding-right: 0;
   padding-bottom: 0;
@@ -937,7 +939,7 @@ input.checkoff:focus {
 .type-of-housing {
   box-sizing:
     border-box;
-  padding-left: 27px;
+  padding-left: 25px;
   padding-top: 0;
   padding-right: 0;
   padding-bottom: 0;
@@ -963,6 +965,7 @@ input.checkoff:focus {
   font-size: 16px;
   line-height: 21px;
   color: #ffffff;
+  letter-spacing: 0.2px;
   padding-top: 27px;
   padding-bottom: 15px;
 }
@@ -1274,7 +1277,7 @@ input.checkoff:focus {
 }
 
 .filter-range {
-  width: 314px;
+  width: 316px;
   padding-top: 27px;
   color: #ffffff;
   text-transform: uppercase;
@@ -1292,10 +1295,9 @@ input.checkoff:focus {
   display: flex;
   align-items: center;
   position: relative;
-  height: 36px;
-  margin-bottom: 17px;
-  font-size:
-    0;
+  height: 34px;
+  margin-bottom: 19px;
+  font-size: 0;
   border: 2px solid #ffffff;
   border-radius: 2px;
 }
